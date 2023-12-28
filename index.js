@@ -21,24 +21,23 @@
 // Satrni kiritish sifatida qabul qilivuchi va qatordagi unlilar sonini (a, i, u, o, e) qaytaruvchi funksiya yozing.
 // katta harflarga etibor bermang va katta va kichik unlilarni korib chiqing.
 
-let sentence = "JavaScriptda unlilar sonini hisoblash";
-function unlilarSoni(satr) {
-    let counter = 0;
+// let sentence = "JavaScriptda unlilar soni";
+// function unlilarSoni(satr) {
+//     let counter = 0;
 
-    let kichikSatr = satr.toLowerCase();
+//     let kichikSatr = satr.toLowerCase();
 
-    for (let i = 0; i < kichikSatr.length; i++) {
-      let harf = kichikSatr[i];
-      if (harf == 'a' || harf == 'i' || harf == 'u' || harf == 'o' || harf == 'e') {
-        counter++;
-      }
-    }
+//     for (let i = 0; i < kichikSatr.length; i++) {
+//       if (kichikSatr[i] == 'a' || kichikSatr[i] == 'i' || kichikSatr[i] == 'u' || kichikSatr[i] == 'o' || kichikSatr[i] == 'e') {
+//         counter++;
+//       }
+//     }
 
-    return counter;
-  }
+//     return counter;
+//   }
 
-  let res = unlilarSoni(sentence);
-  console.log("Unlilar soni:", res);
+//   let res = unlilarSoni(sentence);
+//   console.log(res);
   
 
 // 3-masala
@@ -107,13 +106,13 @@ function unlilarSoni(satr) {
 // Takrorlangan belgilar sonidan foydalanib, asosiy satrni siqishni bajaradigan funksiya yozing.
 // Masalan "aabcccccaaa" qatori "a2b1c5a3" ga aylanadi.
 
-// let asosiySatr = "accbbbbmkk";
+// let asosiySatr = "accbbbbmkklll";
 // function compression(satr) {
 //   let siqishtirilganSatr = "";
 //   let counter = 1;
 
 //   for (let i = 0; i < satr.length; i++) {
-//     if (satr[i] += 1) {
+//     if (satr[i] == satr[i + 1]) {
 //       counter++;
 //     } else {
 //       siqishtirilganSatr += satr[i] + (counter > 1 ? counter : "");
